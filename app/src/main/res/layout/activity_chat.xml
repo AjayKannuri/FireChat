@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4febb65a"
+    tools:context="com.example.hp.firechat.ChatActivity">
+    <include layout="@layout/app_bar_layout" android:id="@+id/chat_tool_bar_bro"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/chat_tool_bar_bro">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chat_tool_bar_bro" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/chat_add_Btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_add_black_24dp"
+            android:background="#ffffff"
+            android:adjustViewBounds="true"
+           />
+
+        <EditText
+            android:id="@+id/chat_view_EditText"
+            android:layout_width="264dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="Enter the Text"
+            android:padding="5dp"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/chat_send_Btn"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:src="@mipmap/ic_send_black_24dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

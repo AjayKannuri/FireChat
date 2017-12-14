@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.firechat.RegisterActivity">
+    <include layout="@layout/app_bar_layout" android:id="@+id/register_toolbar"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="99dp"
+        android:textSize="20dp"
+        android:allowUndo="false"
+        android:clickable="false"
+        android:textColor="#646363"
+        android:focusable="false"
+        android:text="Create a new Account" />
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Name........."
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#f29191"
+        android:textColorHint="#988f8f" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameField"
+        android:layout_alignStart="@+id/nameField"
+        android:layout_below="@+id/nameField"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Email....."
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textColor="#f29191"
+        android:textColorHint="#988f8f" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailField"
+        android:layout_alignStart="@+id/emailField"
+        android:layout_below="@+id/emailField"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Password...."
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="#f29191"
+        android:textColorHint="#988f8f" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/passwordField"
+        android:layout_alignRight="@+id/passwordField"
+        android:layout_below="@+id/passwordField"
+        android:layout_marginTop="16dp"
+        android:background="#d38a8a"
+        android:text="create account"
+        android:textColor="#ffffff" />
+</RelativeLayout>

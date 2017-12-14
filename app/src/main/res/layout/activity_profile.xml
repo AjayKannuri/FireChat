@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.firechat.ProfileActivity">
+    <include layout="@layout/app_bar_layout" android:id="@+id/profile_toolbar"/>
+
+    <ImageView
+        android:id="@+id/profile_single_image"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@+id/profile_toolbar"
+        android:layout_centerHorizontal="true"
+        android:background="#16090909"
+        android:src="@mipmap/ic_account_circle_white_48dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/profile_single_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:padding="1dp"
+        android:text="Display Name"
+        android:textAlignment="center"
+        android:textColor="#e93ae4"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profile_status"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Hi There I am using FireChat"
+        android:textAlignment="center"
+        android:textColor="#7b70f2" />
+
+    <TextView
+        android:id="@+id/Profile_totalFriends"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Profile_Send_requestBtn"
+        android:layout_below="@+id/profile_status"
+        android:text="Total Friends"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/Profile_Send_requestBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Profile_totalFriends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#f70000"
+        android:text="send friend request" />
+
+    <Button
+        android:id="@+id/Profile_cancel_requestBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Profile_Send_requestBtn"
+        android:layout_below="@+id/Profile_Send_requestBtn"
+        android:layout_marginTop="11dp"
+        android:background="#f70000"
+        android:text="cancel friend request" />
+
+</RelativeLayout>

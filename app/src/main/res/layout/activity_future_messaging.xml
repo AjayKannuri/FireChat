@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.firechat.FutureMessagingActivity">
+
+    <include
+        android:id="@+id/future_app_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <EditText
+        android:id="@+id/Date_text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Time_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="YYYY-MM-DD"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#ee00f6"
+        android:textColorHint="#86b3e9" />
+
+    <Button
+        android:id="@+id/okay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/future_Message"
+        android:layout_below="@+id/future_Message"
+        android:layout_marginEnd="17dp"
+        android:padding="5dp"
+        android:layout_marginTop="58dp"
+        android:background="#ff1010"
+        android:text="send the message"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/Time_text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/future_Message"
+        android:layout_alignStart="@+id/Date_text"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="HH-MM-SS"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#ee00f6"
+        android:textColorHint="#86b3e9" />
+
+    <EditText
+        android:id="@+id/future_Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Enter the message"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#ee00f6"
+        android:textColorHint="#86b3e9" />
+
+
+</RelativeLayout>
